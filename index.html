@@ -17,7 +17,7 @@
     <script src="/js/modernizr.custom.46884.js"></script>
     <script src="/js/jquery.slicebox.min.js"></script>
 
-    <style>
+    <style type="text/css">
         .sb-slider{
             margin: 10px auto;
             position: relative;
@@ -30,6 +30,28 @@
             margin: 0;
             padding: 0;
             display: none;
+        }
+        .sb-slider li > a{
+            outline: none;
+        }
+        .sb-slider li > a img{
+            border: none;
+        }
+        .sb-description{
+            padding: 20px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            z-index: 1000;
+            position: absolute;
+            background: #cbbfae;
+            background: rgba(190, 176, 155, 0.4);
+            border-left: 4px solid rgba(255, 255, 255, 0.7);
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+            filter: alpha(opacity=0);
+            opacity: 0;
+            color: white;
+            transition: all 200ms;
         }
     </style>
 </head>
