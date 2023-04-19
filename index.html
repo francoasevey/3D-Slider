@@ -16,6 +16,22 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="/js/modernizr.custom.46884.js"></script>
     <script src="/js/jquery.slicebox.min.js"></script>
+
+    <style>
+        .sb-slider{
+            margin: 10px auto;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            list-style: none;
+            padding: 0;
+        }
+        .sb-slider li{
+            margin: 0;
+            padding: 0;
+            display: none;
+        }
+    </style>
 </head>
 <body>
     
@@ -71,6 +87,11 @@
                     </div>
                 </li>
             </ul>
+            <div id="shadow" class="shadow"></div>
+            <div id="nav-arrows" class="nav-arrows">
+                <a href="">Next</a>
+                <a href="">Previous</a>
+            </div>
         </div>
     </div>
 </body>
