@@ -37,6 +37,10 @@
         .sb-slider li > a img{
             border: none;
         }
+        .sb-slider img{
+            max-width: 100%;
+            display: block;
+        }
         .sb-description{
             padding: 20px;
             bottom: 10px;
@@ -52,6 +56,16 @@
             opacity: 0;
             color: white;
             transition: all 200ms;
+        }
+        .sb-slider li.sb-current .sb-description{
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+            filter: alpha(opacity=80);
+            opacity: 1;
+        }
+        .sb-slider li.sb-current .sb-description:hover{
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+            filter: alpha(opacity=99);
+            background: rgba(190, 176, 155, 0.7);
         }
     </style>
 </head>
